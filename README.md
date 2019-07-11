@@ -151,6 +151,7 @@ Now we can run `rails s` from the command line to start our server. Go to `local
 ![](https://i.imgur.com/cjBrX5j.png)
 
 <br>
+
 ![](https://i.imgur.com/EjvruMO.png)
 
 <br>
