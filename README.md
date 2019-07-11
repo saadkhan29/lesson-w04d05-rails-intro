@@ -121,6 +121,40 @@ Terminal feedback will look something like this:
 <br>
 <hr>
 
+# &#x1F449; CREATE DATABASE
+
+`rails db:create` creates your postgres database based on the name of your Rails app.
+
+![](https://i.imgur.com/DIlpKJY.png)
+
+![](https://i.imgur.com/GjPRN2F.png)
+
+We can check that the database was created by typing
+
+```
+rails dbconsole
+```
+
+This will open up our postgres CLI.
+
+Close it again with `\q`.
+
+
+<br>
+<hr>
+
+# Rails Server
+
+Now we can run `rails s` from the command line to start our server. Go to `localhost:3000` in the browser and you should see this: 
+
+
+![](https://i.imgur.com/cjBrX5j.png)
+
+<br>
+![](https://i.imgur.com/EjvruMO.png)
+
+<br>
+<hr>
 
 ## Files and Folders
 
@@ -274,49 +308,19 @@ end
 - You should be able to see this view at both `http://localhost:3000/about` and `http://localhost:3000/`. Why?
 
 
+
+
 <br>
 <hr>
 
-<br>
-<hr>
 
-# &#x1F449; CREATE DATABASE
-
-`rails db:create` creates your postgres database based on the name of your Rails app.
-
-![](https://i.imgur.com/DIlpKJY.png)
-
-![](https://i.imgur.com/GjPRN2F.png)
-
-We can check that the database was created by typing
-
-```
-rails dbconsole
-```
-
-This will open up our postgres CLI.
-
-Close it again with `\q`.
-
-### Rails Server
-
-Now we can run `rails s` from the command line to start our server. Go to `localhost:3000` in the browser and you should see this: 
-
-
-![](https://i.imgur.com/cjBrX5j.png)
-
-<br>
-![](https://i.imgur.com/EjvruMO.png)
-
-<br>
-<hr>
 
 # &#x1F449; CREATE A TODO MODEL
 
 A `Model` is the `M` in `MVC`. It represents the data layer of our Rails app. Rails has a handy command line tools that will build a model file and a migration file for us (more on migrations in a second). Run this from the command line:
 
 ```ruby
-rails g model todo title:string completed:boolean`
+rails g model todo title:string completed:boolean
 ```
 ![](https://i.imgur.com/CbkwS1M.png)
 
