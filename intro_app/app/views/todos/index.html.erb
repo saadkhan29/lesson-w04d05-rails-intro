@@ -1,0 +1,22 @@
+<h1>All Todos!</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>TITLE</th>
+      <th>COMPLETED</th>
+      <th>DATETIME</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @todos.each do |todo| %>
+    <tr>
+      <td><%= todo.id %></td>
+      <td><%= todo.title %></td>
+      <td><%= todo.completed %></td>
+      <td><%= todo.updated_at %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
