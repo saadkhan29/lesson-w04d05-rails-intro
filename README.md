@@ -74,6 +74,13 @@ Something we haven't seen yet, is a new philosophy called `Convention over Confi
 <br>
 <hr>
 
+# Installing Rails
+```ruby
+gem install rails
+```
+
+<br>
+<hr>
 #  &#x2600; BUILD A NEW RAILS APP
 
 To start a new rails app, you **do not** have to make a directory. 
