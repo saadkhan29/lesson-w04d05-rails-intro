@@ -6,7 +6,7 @@
 _After this lesson, students will be able to:_
 
 - Initialize a Rails project
-- Use a postgresql db with Rails
+- Use a MySQL db with Rails
 - Run a migration to create a table
 - Run migrations to create and rename columns
 - Make models and query them with ActiveRecord
@@ -92,19 +92,19 @@ We are going to build an app called
 The command to build our rails app with postgres is the following:
 
 ```bash
-rails new intro_app -d postgresql
+rails new intro_app -d mysql
 ```
 
 In English:
 
-Hey `rails` make a `new` project called `intro_app` and set the database `-d` to `postgresql`.
+Hey `rails` make a `new` project called `intro_app` and set the database `-d` to `mysql`.
 
 
 What's all this stuff, One more time?
 
 * `rails new` will make a new project directory and populate it with folders and files
 * The name of our app is `intro_app`. 
-* With the `-d` flag we specify which type of database to use. In our case, we use `postgresql`
+* With the `-d` flag we specify which type of database to use. In our case, we use `mysql`
 
 
 you may need to enter your computer pwd
