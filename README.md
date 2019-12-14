@@ -157,15 +157,9 @@ Terminal feedback will look something like this:
 
 ![](https://i.imgur.com/GjPRN2F.png)
 
-We can check that the database was created by typing
+We can check that the database by going into MySQL Workbench
 
-```
-rails dbconsole
-```
 
-This will open up our postgres CLI.
-
-Close it again with `\q`.
 
 
 <br>
