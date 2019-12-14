@@ -89,7 +89,7 @@ We are going to build an app called
 
 ### `intro_app`
 
-The command to build our rails app with postgres is the following:
+The command to build our rails app with mysql is the following:
 
 ```bash
 rails new intro_app -d mysql
