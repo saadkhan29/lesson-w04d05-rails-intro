@@ -187,7 +187,7 @@ Now we can run `rails s` from the command line to start our server. Go to `local
 
 ![](https://i.imgur.com/sA1UmdB.png)
 
-There are many files and folders that Rails makes for us. This is in stark contrast to Express that give us . . . a package.json.
+There are many files and folders that Rails makes for us.
 
 |   |Express| Rails|Comments|
 |:-:|:-----:|:----:|:-------:|
