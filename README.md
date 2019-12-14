@@ -76,7 +76,7 @@ Something we haven't seen yet, is a new philosophy called `Convention over Confi
 
 <br>
 <hr>
-## Server Application
+### Server Application
 
 Suppose we wanted to build a server application that can show a profile:
 
