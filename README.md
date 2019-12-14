@@ -79,6 +79,27 @@ Something we haven't seen yet, is a new philosophy called `Convention over Confi
 gem install rails
 ```
 
+Note: If you are getting error, so try to check that what is the error and what is it asking for.
+<br>
+Is it asking for rails webpacker:install<br>
+OR<br>
+Is it asking for Node.js<br>
+OR <br>
+Is it asking for yarn<br>
+<br>
+<br>
+After installation of desired pckages in Windows and MAC, run command 
+```bash
+rails s
+```
+to check that rails server is installed properly or not.
+
+<br>
+<br>
+
+Note: Exit your rails server only by using Ctrl C command.
+
+
 <br>
 <hr>
 #  &#x2600; BUILD A NEW RAILS APP
