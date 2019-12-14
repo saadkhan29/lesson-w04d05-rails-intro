@@ -195,6 +195,64 @@ Terminal feedback will look something like this:
 <br>
 <hr>
 
+
+## MVC with Rails
+
+Rails is a web framework - a tool that helps us quickly and easily build web applications - written in Ruby, and designed and created by David Heinemeier Hannson (also known as 'DHH'). Although Rails applications don't match up perfectly with the abstract idea of MVC, their architecture is fairly similar.
+
+Open it up in Atom. Have a look at the file structure. Let's take a step back and just look at directories at the top level of the app.
+
+```sh
+.
+├── app
+├── config
+└── db
+```
+
+For now, you only need to think about `app`, `config`, and `db` - you probably
+won't be touching any code outside of those three directories. How is that
+possible? Because Rails actually builds out most of these files and folders for
+you, every time you use it to create a new application. That's why it's called
+a 'framework' - it gives you the skeleton for a brand new app, which you can
+then customize.
+
+- The `app` directory holds the code for our application itself. We'll be
+    writing a lot of code here.
+- `config` holds configuration settings for our app and for the things that
+    plug into it. This includes things like environmental variable settings and
+    secret keys, but also things like the routing configuration for our server
+    (which is not strictly part of our Rails app, but which our app uses);
+    the `routes.rb` file, in particular, defines all of the routing for our
+    app.
+- `db` holds files related to the structure of the application's database.
+    The database, like the server, is separate from Rails and is not strictly
+    part of the app, so it makes sense to keep this outside of the `app`
+    directory.
+
+Let's dive into the `app` directory. This app in particular has more going on
+than yours probably will, but it still has all the basic components.
+
+```bash
+./app
+├── controllers
+├── models
+└── views
+```
+
+Three of these directories should jump out at you: `controllers`, `models`, and
+`views`. Each holds the different Ruby files that Rails uses to handle the
+respective responsibilities of MVC.
+
+Don't worry about `assets`, `views`, `mailers`, or `helpers` for now, as these all deal with more of the "views" portion of an application, which our front-end is handling. Building a web application with [Rails' default settings](http://rubyonrails.org/) will give you this [monolithic](https://en.wikipedia.org/wiki/Monolithic_application) application style.
+
+## How to Approach Understanding Rails
+
+There is a **lot** of structure and code automatically provided by Rails, and as Rails developers, we only need interact with and understand a small part of it. In fact, the creator of Rails has himself stated that he doesn't need to know or understand all of the Rails framework ([watch the video clip](https://www.youtube.com/watch?v=zKyv-IGvgGE&feature=youtu.be&t=34m55s))!
+
+For the aspects of the Rails framework we are concerned with, excellent descriptions and code examples can be found in the [Getting Started with Rails guide](https://guides.rubyonrails.org/getting_started.html).
+
+<br>
+<br>
 # &#x1F449; CREATE DATABASE
 
 `rails db:create` creates your mysql database based on the name of your Rails app.
