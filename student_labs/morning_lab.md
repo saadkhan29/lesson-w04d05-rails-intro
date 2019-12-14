@@ -3,7 +3,7 @@
 
 ## MORE MIGRATIONS
 
-In `intro_app_api` (our **Todos** app):
+In `intro_app` (our **Todos** app):
 
 If we want to alter our database tables, columns, datatypes, etc. We **do not change them manually** in the schema or in migrations that have already run.
 
