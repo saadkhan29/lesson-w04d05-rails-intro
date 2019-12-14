@@ -195,7 +195,7 @@ There are many files and folders that Rails makes for us.
 | Server | Express | Puma/Rack |Puma is the server, Rack deals with the middleware, these are configured and arranged pretty differently from Express, so you won't see a `server` file in the root|
 |Controllers| controllers | app/controllers | part of MVC |
 | Models | models | app/models | part of MVC |
-|Views|we used ejs (handlebars is another common one), but we also used Angular| erb, BUT! We won't use it, when we're ready we'll jump into using React|part of MVC|
+|Views|we used EJS (handlebars is another common one), but we also used Angular| ERB |part of MVC|
 
 We don't need to look inside these nooks and crannies. The idea is that Rails will do a bunch of stuff for us inside of these 'black boxes'. This is in contrast to Express where we see everything, including all the middleware config.
 
