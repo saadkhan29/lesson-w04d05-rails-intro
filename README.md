@@ -67,7 +67,7 @@ Something we haven't seen yet, is a new philosophy called `Convention over Confi
 |Database| MongoDB| MySQL |MongoDB is considered NoSQL, while MySQL is SQL|
 |ODM/ORM| Mongoose| Active Record |Active Record will convert our SQL into JSON|
 |Third Party Code|NPM| Gem/ bundler/ bundler install|By default Gems are installed globally by default, npm packages, by default, are local|
-|server-side rendering|EJS or Handlebars| [erb](https://www.stuartellis.name/articles/erb/)|server-side rendering|
+|server-side rendering|EJS ( Embedded Javascript ) or Handlebars| [ERB (Embedded RuBy)](https://www.stuartellis.name/articles/erb/)|server-side rendering|
 |run the server |nodemon| rails s| You'll see something called puma running in terminal|
 
 
