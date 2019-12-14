@@ -397,7 +397,7 @@ Run the migration with `rails db:migrate`. This command will run every file in t
 
 ### schema.rb
 
-Running the migration screated a `schema.rb` file. This is the schema for all your data.
+Running the migration created a `schema.rb` file. This is the schema for all your data.
 
 ![](https://i.imgur.com/KbhxUby.png)
 
