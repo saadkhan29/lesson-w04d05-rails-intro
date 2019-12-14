@@ -543,17 +543,18 @@ Todo.find(1).destroy
 
 We will be using these Active Record queries within Rails.
 
-
-&#x1F535; **Activity (9 mins)**
+<hr>
+## Lab
+<hr>
 
 Using rails console `rails c`:
 
-1. Create a new Todo
+1. Create 10 new Todo's
 2. Query Todo to see how many there are in the db
 3. Create another Todo
-4. Update the second Todo
-5. Query Todo to see all of them
-5. Delete the first Todo
+4. Update the last Todo
+5. Query Todo to see the updated one
+6. Delete the last Todo
 
 Type `exit` to leave Rails Console
 
