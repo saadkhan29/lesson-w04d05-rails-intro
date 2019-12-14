@@ -18,7 +18,6 @@ _After this lesson, developers will be able to:_
 <hr>
 
 
-<img src="https://raw.githubusercontent.com/saadkhan29/lesson-w04d05-rails-intro/master/MVC.png">
 
 ### What is Rails?
 Rails is a server-side web application development framework written in the Ruby programming language. It is designed to make programming web applications easier by making assumptions about what every developer needs to get started. It allows you to write less code while accomplishing more than many other languages and frameworks.
@@ -120,6 +119,11 @@ In addition to these three types of components, however, there is a fourth piece
 What which part(s) of an HTTP request does the router use to determine which code to run?
 
 MVC architecture is very common in web applications, and Rails gives us the tools to spin up applications that are roughly in line with the idea of MVC.
+
+<br>
+<hr>
+
+<img src="https://raw.githubusercontent.com/saadkhan29/lesson-w04d05-rails-intro/master/MVC.png">
 
 <br>
 <hr>
