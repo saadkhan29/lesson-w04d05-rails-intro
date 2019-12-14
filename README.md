@@ -105,6 +105,7 @@ If we were to try to generalize and abstract away the differences between these 
 
 The quartet of 'create', 'read', 'update', and 'destroy' is commonly known as 'CRUD'; each refers to a specific type of action that can be performed on our data storage system. Each of these types might have more than one specific action associated with it ('read one' vs 'read all', for instance).
 
+## MVC
 One common way of dividing up these four responsibilities is the
 **Model-View-Controller** (MVC) architecture pattern. This pattern involves making three core types of components, each responsible for a different part of the server's functionality.
 
