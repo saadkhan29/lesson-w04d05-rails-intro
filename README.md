@@ -16,6 +16,7 @@ _After this lesson, developers will be able to:_
 
 <br>
 <hr>
+
 ```html
 <img src="/saadkhan29/lesson-w04d05-rails-intro/blob/master/MVC.png?raw=true">
 ```
