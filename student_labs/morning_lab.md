@@ -39,19 +39,8 @@ end
 
 Check the **schema.rb** file to see that the "description" column was added.
 
-_schema.rb_
-
-![](https://i.imgur.com/Rb7XnUM.png)
-
-Also, to see your changes, open up rails console `rails c`.
-
-See the columns associated with your table / model with:
-
-```
-Model.column_names
-```
-
-In this case, `Todo.column_names`
+<br>
+Now check MySQL workbench that column is added properly
 
 &#x1F535; **Activity**
 
