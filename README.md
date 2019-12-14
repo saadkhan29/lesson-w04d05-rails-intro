@@ -18,7 +18,7 @@ _After this lesson, developers will be able to:_
 <hr>
 
 
-<img src="http://github.com/saadkhan29/lesson-w04d05-rails-intro/blob/master/MVC.png?raw=true">
+<img src="https://raw.githubusercontent.com/saadkhan29/lesson-w04d05-rails-intro/master/MVC.png">
 
 ### What is Rails?
 Rails is a server-side web application development framework written in the Ruby programming language. It is designed to make programming web applications easier by making assumptions about what every developer needs to get started. It allows you to write less code while accomplishing more than many other languages and frameworks.
