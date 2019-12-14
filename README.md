@@ -411,21 +411,7 @@ Same goes for your migrations. Once you've run a migration *DO NOT TOUCH IT*
 
 ### Check the database itself:
 
-```sql
-$ rails dbconsole
-```
-
-Opens up a psql shell
-
-See the columns created for the todos table:
-
-```sql
-SELECT * FROM todos;
-```
-
-![](https://i.imgur.com/qT7EuOf.png)
-
-Quit with `\q`.
+Lets go to MySQL workbench
 
 Now that our database has been constructed with tables and columns for the tables, let's get some data in there.
 
