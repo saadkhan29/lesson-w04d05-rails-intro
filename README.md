@@ -3,20 +3,23 @@
 ![Rails Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ruby_On_Rails_Logo.svg/1200px-Ruby_On_Rails_Logo.svg.png)
 
 ### Lesson Objectives
-_After this lesson, students will be able to:_
+_After this lesson, developers will be able to:_
 
+- Explain why Rails is necessary
+- Map MVC roles to specific components of Rails
 - Initialize a Rails project
 - Use a MySQL db with Rails
 - Run a migration to create a table
 - Run migrations to create and rename columns
 - Make models and query them with ActiveRecord
+- Create a model with full CRUD capability
 
 <br>
 <hr>
 
 
 ### What is Rails?
-[Rails is a server-side web application framework written in Ruby](https://en.wikipedia.org/wiki/Ruby_on_Rails).
+Rails is a server-side web application development framework written in the Ruby programming language. It is designed to make programming web applications easier by making assumptions about what every developer needs to get started. It allows you to write less code while accomplishing more than many other languages and frameworks.
 
 
 #### It features:
@@ -70,6 +73,49 @@ Something we haven't seen yet, is a new philosophy called `Convention over Confi
 |server-side rendering|EJS ( Embedded Javascript ) or Handlebars| [ERB (Embedded RuBy)](https://www.stuartellis.name/articles/erb/)|server-side rendering|
 |run the server |nodemon| rails s| You'll see something called puma running in terminal|
 
+
+<br>
+<hr>
+## Server Application
+
+Suppose we wanted to build a server application that can show a profile:
+
+1. A client computer makes a
+    GET request that asks for a specific page.
+1. When the GET request is received by the server, the server application parses the request and identifies which measurement record is being requested.
+1. The data for the desired measurement gets retrieved from our set of records.
+1. Finally, the desired data gets put into a HTML file and sent back to the client.
+
+Suppose we wanted to build an server application that records a user's height and weight. It might work as follows:
+
+1. A user interacts with a front-end application, triggering a POST, and this POST request contains data - specifically, the latest measurements of height and weight.
+1. When the POST request is received by the server, the server application parses the request and extracts the relevant information.
+1. The data from the POST request gets added to our records.
+1. As confirmation, a success message in HTML gets sent to the client.
+
+If we were to try to generalize and abstract away the differences between these two steps, we might say that our web application needs to:
+
+1. Receive incoming requests from a client.
+1. Execute specific behaviors in response to those requests.
+1. Create, read, update, or destroy data records through some kind of data storage system.
+1. Share information back to the client.
+
+The quartet of 'create', 'read', 'update', and 'destroy' is commonly known as 'CRUD'; each refers to a specific type of action that can be performed on our data storage system. Each of these types might have more than one specific action associated with it ('read one' vs 'read all', for instance).
+
+One common way of dividing up these four responsibilities is the
+**Model-View-Controller** (MVC) architecture pattern. This pattern involves making three core types of components, each responsible for a different part of the server's functionality.
+
+A **Model** directly manages the data in our application, and provides a representation of that data for the rest of the application to use.
+
+A **View** is like it sounds - it's data that gets sent back to the client for the user to consume.
+
+A **Controller** responds to user requests as they come in, and utilizes both the model and the view components to perform the desired behavior and produce a response.
+
+In addition to these three types of components, however, there is a fourth piece that it's important to consider with web development particularly: routing. **Routes** indicate to the server which controllers should be triggered (and how) by which kinds of requests. It's a critical piece of the puzzle, and one we'll be looking at later today in more detail.
+
+What which part(s) of an HTTP request does the router use to determine which code to run?
+
+MVC architecture is very common in web applications, and Rails gives us the tools to spin up applications that are roughly in line with the idea of MVC.
 
 <br>
 <hr>
